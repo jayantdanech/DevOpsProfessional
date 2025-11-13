@@ -20,10 +20,10 @@ pipeline {
                     kubectl apply -f app_deployment.yml
 
                     echo ">>> Restarting deployment to force latest image pull"
-                    kubectl rollout restart deployment/devops-capstone1
+                    kubectl rollout restart deployment/devops-capstone-p1
 
                     echo ">>> Waiting for rollout to complete"
-                    kubectl rollout status deployment/devops-capstone1 --timeout=120s
+                    kubectl rollout status deployment/devops-capstone-p1 --timeout=120s
 
                     echo ">>> Application deployed successfully!"
                 '''
