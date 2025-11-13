@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-capstone1
+  name: devops-capstone-p1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: devops-capstone1
+      app: devops-capstone-p1
   template:
     metadata:
       labels:
-        app: devops-capstone1
+        app: devops-capstone-p1
     spec:
       containers:
       - name: app
@@ -22,11 +22,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: devops-capstone1-svc
+  name: devops-capstone-p1-svc
 spec:
   type: NodePort
   selector:
-    app: devops-capstone1
+    app: devops-capstone-p1
   ports:
     - port: 80
       targetPort: 80
