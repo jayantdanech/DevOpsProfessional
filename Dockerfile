@@ -1,3 +1,6 @@
+# Purpose:  Project Work
+# Author:  Jayant Danech
+
 FROM nginx:alpine
 
 RUN rm -rf /usr/share/nginx/html/*
