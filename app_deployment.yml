@@ -15,6 +15,7 @@ spec:
       containers:
       - name: app
         image: jayantdanech/devops-capstone-p1:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
