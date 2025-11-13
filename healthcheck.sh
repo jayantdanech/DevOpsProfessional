@@ -4,8 +4,8 @@
 
 URL="http://localhost:85"
 debuginfo() {
-    echo "curl $URL"
-    curl $URL
+    echo "curl -s $URL"
+    curl -s $URL
 }
 
 status=$(curl -s -o /dev/null -w "%{http_code}" $URL)
